@@ -1,5 +1,7 @@
 class Solver
   def factorial(num)
+    raise 'Number must be greater than 0' if num.negative?
+
     result = 1
     (1..num).each do |i|
       result *= i
